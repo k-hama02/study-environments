@@ -1,6 +1,6 @@
 name: deploy
 on:
-  pull_request:
+  push:
     # close だと手動でクローズした場合も実行されてしまう
     # types: [closed]
     branche:
