@@ -3,6 +3,8 @@ on:
   pull_request:
     # close だと手動でクローズした場合も実行されてしまう
     # types: [closed]
+    branche:
+      - release-prod
 jobs:
   Deproy:
     # if分岐で制御
