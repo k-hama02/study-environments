@@ -7,6 +7,7 @@ jobs:
   Deproy:
     # if分岐で制御
     if: github.event.pull_request.merged == true
+    environment: production
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Job Done!!!"
+      - run: echo "Deploy Done!!!"
