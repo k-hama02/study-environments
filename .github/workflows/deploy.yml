@@ -2,11 +2,11 @@ name: deploy
 on:
   pull_request:
     # close だと手動でクローズした場合も実行されてしまう
-    types: [closed]
+    # types: [closed]
 jobs:
   Deproy:
     # if分岐で制御
-    if: github.event.pull_request.merged == true
+    # if: github.event.pull_request.merged == true
     environment: production
     runs-on: ubuntu-latest
     steps:
