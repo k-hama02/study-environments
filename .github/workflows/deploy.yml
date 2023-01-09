@@ -3,13 +3,14 @@ on:
   push:
     # close だと手動でクローズした場合も実行されてしまう
     # types: [closed]
-    branche:
-      - release-prod
+    # branches:
+      # - release-prod
 jobs:
   Deproy:
     # if分岐で制御
     # if: github.event.pull_request.merged == true
-    environment: production
-    runs-on: ubuntu-latest
+    # environment: production
+    # runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
-      - run: echo "Deploy Done!!!"
+      - run: echo "Hello Selfhosted Runner !!!"
