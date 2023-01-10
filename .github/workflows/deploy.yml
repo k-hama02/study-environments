@@ -10,7 +10,7 @@ jobs:
     # if分岐で制御
     # if: github.event.pull_request.merged == true
     # environment: production
-    # runs-on: ubuntu-latest
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
+    # runs-on: self-hosted
     steps:
       - run: echo "Hello Selfhosted Runner !!!"
